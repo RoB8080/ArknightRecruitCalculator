@@ -155,11 +155,13 @@ class Combination {
                 if(sixStar&&(e.star===6)){
                     possibleAgents.push(e);
                     starCount[6]++;
+                    selectedTags=[39];
                     maxStar=6;minStar=6;
                 }
                 else if (fiveStar&&(e.star===5)){
                     possibleAgents.push(e);
                     starCount[5]++;
+                    selectedTags=[38];
                     maxStar=5;minStar=5;
                 }
                 else if ((!fiveStar&&!sixStar)&&e.star<6) {
