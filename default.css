@@ -11,10 +11,10 @@ body {
     background-color: #454545;
 }
 #content {
+    min-height: 100%;
     margin: 0 auto;
     width: 100vmin;
     background-color: #ddddea;
-    min-height: 100%;
 }
 
 #title {
@@ -102,4 +102,8 @@ body {
 #tips {
     padding: 0.5vmin 3vmin;
     font-size: 3vmin;
+}
+#tips a{
+    font-size: 3vmin;
+    text-decoration: underline;
 }
