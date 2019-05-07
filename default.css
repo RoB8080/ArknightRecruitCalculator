@@ -3,6 +3,7 @@
     font-family: Arial,sans-serif;
 }
 html {
+    height: 100%;
 }
 body {
     height: 100%;
@@ -11,11 +12,12 @@ body {
 #content {
     margin: 0 auto;
     width: 100vmin;
+    background-color: #ddddea;
+    min-height: 100%;
 }
 
 #tagPool {
     padding: 1.25vmin;
-    background-color: #bbbbc0;
 }
 .tag {
     display: inline-block;
@@ -31,7 +33,6 @@ body {
 }
 .tag.selected {
     background: #1e9eff;
-
 }
 .tagInput {
     line-height: 4vh;
@@ -40,7 +41,6 @@ body {
 }
 #buttonContainer {
     text-align: center;
-    background-color: #bbbbc0;
     padding: 2vmin 0;
 }
 #buttonContainer button {
@@ -55,10 +55,43 @@ body {
     box-shadow: 0 0.5vmin 1vmin 0.1vmin #555566;
 }
 
-#result {
-    padding: 0.5vmin 3vmin;
-    font-size: 3vmin;
+#results {
+    padding: 1.25vmin;
 }
+.result {
+    border-top: 1px solid #bbbbca;
+    padding: 1vmin 0;
+}
+.line div{
+    margin: 1.25vmin 1.25vmin;
+    width: 17vmin;
+    line-height: 4.5vmin;
+    font-size: 2.2vmin;
+    text-align: center;
+    display: inline-block;
+    cursor: default;
+}
+.line .label {
+    font-size:2.6vmin;
+    font-weight: bold;
+}
+.tag.recommend {
+    background: #1e9eff;
+}
+.agent {
+    color: #ffffff;
+    box-shadow: 0 0.5vmin 1vmin 0.1vmin #555566;
+}
+.agent.s5 {
+    background-color: #d9d92b;
+}
+.agent.s4 {
+    background-color: #822bd9;
+}
+.agent.s3 {
+    background-color: #737373;
+}
+
 #tips {
     padding: 0.5vmin 3vmin;
     font-size: 3vmin;

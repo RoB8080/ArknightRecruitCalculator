@@ -61,51 +61,16 @@ class Agent {
     }
 }
 function initAgents() {
-    //一星
-    new Agent("Castle-3",1,[4,21,27]);
-    new Agent("Lancet-2",1,[6,22,26]);
-//二星
-    new Agent("巡林者",2,[1,11,22,37]);
-    new Agent("杜林",2,[2,12,22,37]);
-    new Agent("12F",2,[2,11,22,37]);
-    new Agent("夜刀",2,[3,12,21,37]);
-    new Agent("黑角",2,[5,11,21,37]);
-//三星
-    new Agent("安德切尔",3,[1,11,22,23]);
-    new Agent("克洛丝",3,[1,12,22,23]);
-    new Agent("史都华德",3,[2,11,22,23]);
-    new Agent("炎熔",3,[2,12,22,30]);
-    new Agent("香草",3,[3,12,21,28]);
-    new Agent("芬",3,[3,12,21,28]);
-    new Agent("翎羽",3,[3,12,21,23,28]);
-    new Agent("玫兰莎",3,[4,12,21,23,25]);
-    new Agent("米格鲁",3,[5,12,21,24]);
-    new Agent("安赛尔",3,[6,11,22,26]);
-    new Agent("芙蓉",3,[6,12,22,26]);
-    new Agent("梓兰",3,[7,12,22,33]);
-//四星
-    new Agent("白雪",4,[1,12,22,30,33]);
-    new Agent("流星",4,[1,12,22,23,32]);
-    new Agent("杰西卡",4,[1,12,22,23,25]);
-    new Agent("夜烟",4,[2,12,22,23,32]);
-    new Agent("远山",4,[2,12,22,30]);
-    new Agent("清道夫",4,[3,12,21,23,28]);
-    new Agent("红豆",4,[3,12,21,23,28]);
-    new Agent("杜宾",4,[4,12,21,23,27]);
-    new Agent("艾丝黛尔",4,[4,12,21,25,30]);
-    new Agent("慕斯",4,[4,12,21,23]);
-    new Agent("霜叶",4,[4,12,21,23,33]);
-    new Agent("缠丸",4,[4,12,21,23,25]);
-    new Agent("角峰",4,[5,11,21,24]);
-    new Agent("蛇屠箱",4,[5,12,21,24]);
-    new Agent("古米",4,[5,12,21,24,26]);
-    new Agent("末药",4,[6,12,22,26]);
-    new Agent("调香师",4,[6,12,22,26]);
-    new Agent("地灵",4,[7,12,22,33]);
-    new Agent("砾",4,[8,12,21,24,29]);
-    new Agent("暗索",4,[8,12,21,35]);
-    new Agent("阿消",4,[8,12,21,35]);
-//五星
+    //六星
+    new Agent("能天使",6,[1,12,22,23]);
+    new Agent("伊芙利特",6,[2,12,22,30,32]);
+    new Agent("推进之王",6,[3,12,21,23,28]);
+    new Agent("银灰",6,[4,11,21,23,27]);
+    new Agent("星熊",6,[5,12,21,23,24]);
+    new Agent("塞雷娅",6,[5,12,21,24,26,27]);
+    new Agent("闪灵",6,[6,12,22,26,27]);
+    new Agent("夜莺",6,[6,12,22,26,27]);
+    //五星
     new Agent("普罗旺斯",5,[1,12,22,23]);
     new Agent("蓝毒",5,[1,12,22,23]);
     new Agent("守林人",5,[1,12,22,23,36]);
@@ -130,15 +95,50 @@ function initAgents() {
     new Agent("狮蝎",5,[8,12,21,23,25]);
     new Agent("崖心",5,[8,12,21,23,35]);
     new Agent("食铁兽",5,[8,12,21,33,35]);
-//六星
-    new Agent("能天使",6,[1,12,22,23]);
-    new Agent("伊芙利特",6,[2,12,22,30,32]);
-    new Agent("推进之王",6,[3,12,21,23,28]);
-    new Agent("银灰",6,[4,11,21,23,27]);
-    new Agent("星熊",6,[5,12,21,23,24]);
-    new Agent("塞雷娅",6,[5,12,21,24,26,27]);
-    new Agent("闪灵",6,[6,12,22,26,27]);
-    new Agent("夜莺",6,[6,12,22,26,27]);
+    //四星
+    new Agent("白雪",4,[1,12,22,30,33]);
+    new Agent("流星",4,[1,12,22,23,32]);
+    new Agent("杰西卡",4,[1,12,22,23,25]);
+    new Agent("夜烟",4,[2,12,22,23,32]);
+    new Agent("远山",4,[2,12,22,30]);
+    new Agent("清道夫",4,[3,12,21,23,28]);
+    new Agent("红豆",4,[3,12,21,23,28]);
+    new Agent("杜宾",4,[4,12,21,23,27]);
+    new Agent("艾丝黛尔",4,[4,12,21,25,30]);
+    new Agent("慕斯",4,[4,12,21,23]);
+    new Agent("霜叶",4,[4,12,21,23,33]);
+    new Agent("缠丸",4,[4,12,21,23,25]);
+    new Agent("角峰",4,[5,11,21,24]);
+    new Agent("蛇屠箱",4,[5,12,21,24]);
+    new Agent("古米",4,[5,12,21,24,26]);
+    new Agent("末药",4,[6,12,22,26]);
+    new Agent("调香师",4,[6,12,22,26]);
+    new Agent("地灵",4,[7,12,22,33]);
+    new Agent("砾",4,[8,12,21,24,29]);
+    new Agent("暗索",4,[8,12,21,35]);
+    new Agent("阿消",4,[8,12,21,35]);
+    //三星
+    new Agent("安德切尔",3,[1,11,22,23]);
+    new Agent("克洛丝",3,[1,12,22,23]);
+    new Agent("史都华德",3,[2,11,22,23]);
+    new Agent("炎熔",3,[2,12,22,30]);
+    new Agent("香草",3,[3,12,21,28]);
+    new Agent("芬",3,[3,12,21,28]);
+    new Agent("翎羽",3,[3,12,21,23,28]);
+    new Agent("玫兰莎",3,[4,12,21,23,25]);
+    new Agent("米格鲁",3,[5,12,21,24]);
+    new Agent("安赛尔",3,[6,11,22,26]);
+    new Agent("芙蓉",3,[6,12,22,26]);
+    new Agent("梓兰",3,[7,12,22,33]);
+    //二星
+    new Agent("巡林者",2,[1,11,22,37]);
+    new Agent("杜林",2,[2,12,22,37]);
+    new Agent("12F",2,[2,11,22,37]);
+    new Agent("夜刀",2,[3,12,21,37]);
+    new Agent("黑角",2,[5,11,21,37]);
+    //一星
+    new Agent("Castle-3",1,[4,21,27]);
+    new Agent("Lancet-2",1,[6,22,26]);
 }
 
 class Combination {
@@ -188,7 +188,7 @@ class Combination {
 function calculate() {
     //读入tag
     let givenTags=[];
-    $(".selected").each(function(i,e){
+    $("#tagPool .selected").each(function(i,e){
         tags.forEach(function(f){
             if(e.innerHTML===f.name)
                 givenTags.push(f.id)
@@ -266,27 +266,21 @@ function calculate() {
         //和第三名比较
         if (e.score>highscore[2]&&flag) {
             highscore[2]=e.score;
-            if(best[2]===undefined) {
-                best[2]=e;
-            }
-            else {
-                let t=best[2];
-                best[2]=e;
-                e=t;
-            }
+            best[2]=e;
         }
     });
-    let str="";
+    $(".result").remove();
     best.forEach(function(e){
-        str+="推荐选择标签：";
+        let cell=$("<div class=\"result\"></div>"),
+            l1=$("<div class=\"line l1\"><div class=\"label\">&nbsp;推荐标签:</div></div>"),
+            l2=$("<div class=\"line l2\"><div class=\"label\">&nbsp;可得干员:</div></div>");
         e.selectedTags.forEach(function(f){
-            str+=(tags[f].name+"&nbsp;");
+            l1.append("<div class=\"tag recommend\">"+tags[f].name+"</div>");
         });
-        str+="<br/>&nbsp;&nbsp;可能招募干员：";
-        e.possibleAgents.forEach(function(g){
-            str+=(g.name+"&nbsp;"+g.star+"★&nbsp;&nbsp;");
+        e.possibleAgents.forEach(function(f){
+            l2.append("<div class=\"agent s"+f.star+"\">"+f.name+"</div>");
         });
-        str+="<br/><br/>";
+        cell.append(l1,l2);
+        $("#results").append(cell);
     });
-    $("#result").html(str);
 }
