@@ -1,6 +1,7 @@
 $(document).ready(function(){
     initTags();
     initAgents();
+    colorChange = setInterval(function() {s6Animation()},50);
 });
 
 function tagClick(e) {
@@ -11,6 +12,11 @@ function tagClick(e) {
     else if(jQe.siblings(".selected").length<5){
         jQe.addClass("selected");
     }
+}
+
+let colorChange,s6=$(".agent.s6"),colorH = 0;
+function s6Animation(){
+    s6.css("background-color","hsl("+(colorH=(colorH+2)%360)+",80%,90%)");
 }
 
 //tag
@@ -283,4 +289,5 @@ function calculate() {
         cell.append(l1,l2);
         $("#results").append(cell);
     });
+    s6=$(".agent.s6");
 }

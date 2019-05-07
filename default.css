@@ -86,17 +86,19 @@ body {
     background: #1e9eff;
 }
 .agent {
-    color: #ffffff;
     box-shadow: 0 0.5vmin 1vmin 0.1vmin #555566;
 }
+.agent.s6 {
+    background-color: #e6e62e;
+}
 .agent.s5 {
-    background-color: #d9d92b;
+    background-color: #e6e62e;
 }
 .agent.s4 {
-    background-color: #822bd9;
+    background-color: #8a2ee6;
 }
 .agent.s3 {
-    background-color: #737373;
+    background-color: #e6e6e6;
 }
 
 #tips {
