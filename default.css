@@ -1,0 +1,54 @@
+* {
+    font-size: 0;
+    font-family: Arial,sans-serif;
+}
+html {
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+#content {
+    margin: 0 auto;
+    width: 100vmin;
+}
+
+#tagPool {
+    padding: 1.25vmin;
+}
+.tag {
+    display: inline-block;
+    margin: 1.25vmin 1.25vmin;
+    width: 17vmin;
+    line-height: 4.5vmin;
+    font-size: 2.2vmin;
+    text-align: center;
+    color: #ffffff;
+    background: #1f1f1f;
+    cursor: pointer;
+}
+.tag.selected {
+    background: #1e9eff;
+
+}
+.tagInput {
+    line-height: 4vh;
+    font-size: 3vh;
+    width: 32vh;
+}
+#buttonContainer {
+    text-align: center;
+}
+#buttonContainer button {
+    margin: 0 auto;
+    width: 18.5vmin;
+    line-height: 5.3vmin;
+    font-size: 3vmin;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #1e9eff;
+}
+#result {
+    font-size: 3vmin;
+}
