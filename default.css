@@ -15,6 +15,7 @@ body {
 
 #tagPool {
     padding: 1.25vmin;
+    background-color: #bbbbc0;
 }
 .tag {
     display: inline-block;
@@ -26,6 +27,7 @@ body {
     color: #ffffff;
     background: #1f1f1f;
     cursor: pointer;
+    box-shadow: 0 0.5vmin 1vmin 0.1vmin #555566;
 }
 .tag.selected {
     background: #1e9eff;
@@ -38,6 +40,8 @@ body {
 }
 #buttonContainer {
     text-align: center;
+    background-color: #bbbbc0;
+    padding: 2vmin 0;
 }
 #buttonContainer button {
     margin: 0 auto;
@@ -48,7 +52,9 @@ body {
     outline: none;
     color: #ffffff;
     background: #1e9eff;
+    box-shadow: 0 0.5vmin 1vmin 0.1vmin #555566;
 }
+
 #result {
     padding: 0.5vmin 3vmin;
     font-size: 3vmin;
