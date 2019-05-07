@@ -50,5 +50,10 @@ body {
     background: #1e9eff;
 }
 #result {
+    padding: 0.5vmin 3vmin;
+    font-size: 3vmin;
+}
+#tips {
+    padding: 0.5vmin 3vmin;
     font-size: 3vmin;
 }
