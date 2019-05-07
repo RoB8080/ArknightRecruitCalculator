@@ -8,6 +8,7 @@ html {
 body {
     height: 100%;
     margin: 0;
+    background-color: #454545;
 }
 #content {
     margin: 0 auto;
@@ -16,6 +17,12 @@ body {
     min-height: 100%;
 }
 
+#title {
+    font-size: 4.5vmin;
+    line-height: 8vmin;
+    font-weight: bold;
+    text-align: center;
+}
 #tagPool {
     padding: 1.25vmin;
 }

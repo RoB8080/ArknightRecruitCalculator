@@ -181,7 +181,7 @@ class Combination {
             temp.push(e);
         });
         this.selectedTags=temp;
-        this.score=-(starCount[3]/possibleAgents.length)+(starCount[4]/possibleAgents.length)+(starCount[5]/possibleAgents.length)*3+(starCount[6]/possibleAgents.length)*100-(temp.length-1)*0.1;
+        this.score=-(starCount[3]/possibleAgents.length)+(starCount[4]/possibleAgents.length)+(starCount[5]/possibleAgents.length)*3+(starCount[6]/possibleAgents.length)*100+(temp.length-1)*0.05;
         return this;
     }
 }
