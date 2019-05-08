@@ -14,6 +14,20 @@ function tagClick(e) {
     }
 }
 
+let calcScoreFlag=true;
+function calcScore(a,b,c) {
+    return calcScoreFlag?(-a[3]*100+a[4]+a[5]*5+a[6]*100)/b+c*0.05:(-a[3]*5*0.75+a[4]*0.20+a[5]*5*0.05+a[6]*10)/Math.sqrt(b)+c*0.05;
+}
+function valueFirstMethod() {
+    calcScoreFlag=true;
+    $("#methodSelector").children().toggle();
+}
+function starFirstMethod() {
+    calcScoreFlag=false;
+    $("#methodSelector").children().toggle();
+}
+
+
 let colorChange,s6=$(".agent.s6"),colorH = 0;
 function s6Animation(){
     s6.css("background-color","hsl("+(colorH=(colorH+2)%360)+",80%,90%)");
@@ -185,7 +199,7 @@ class Combination {
             temp.push(e);
         });
         this.selectedTags=temp;
-        this.score=(-(starCount[3]/possibleAgents.length)+(starCount[4]/possibleAgents.length)+(starCount[5]/possibleAgents.length)*4+(starCount[6]/possibleAgents.length)*100)+(temp.length-1)*0.05;
+        this.score=calcScore(starCount,possibleAgents.length,temp.length);
         return this;
     }
 }
@@ -211,8 +225,6 @@ function calculate() {
     if(fiveStarTag||sixStarTag){
         t.push(sixStarTag?39:38);
         combinations.push(new Combination(t,fiveStarTag,sixStarTag));//只有星级标签情况
-        console.log(t);
-        console.log(combinations);
         normalTag.forEach(function(e){
             normalTag.forEach(function(u){u[1]=true});//重置使用位
             t.push(e[0]);//加入第二个tag
@@ -257,7 +269,7 @@ function calculate() {
         });
     }
     //处理得到的组合
-    let best=[],highscore=[0,0,0];
+    let best=[],highscore=[-999,-999,-999];
     combinations.forEach(function(e){
         let flag=true;
         //和第一名比较
@@ -292,6 +304,7 @@ function calculate() {
             best[2]=e;
         }
     });
+    console.log(best);
     $(".result").remove();
     best.forEach(function(e){
         let cell=$("<div class=\"result\"></div>"),

@@ -51,6 +51,7 @@ body {
     padding: 2vmin 0;
 }
 #buttonContainer button {
+    display: inline-block;
     margin: 0 auto;
     width: 18.5vmin;
     line-height: 5.3vmin;
@@ -60,6 +61,10 @@ body {
     color: #ffffff;
     background: #1e9eff;
     box-shadow: 0 0.5vmin 1vmin 0.1vmin #555566;
+}
+#methodSelector {
+    display: inline-block;
+    margin-right: 5vmin;
 }
 
 #results {
