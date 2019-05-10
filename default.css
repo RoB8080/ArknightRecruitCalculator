@@ -8,13 +8,13 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-color: #454545;
+    background: linear-gradient(90deg, #fbc2eb, #c3d8fa);
 }
 #content {
     min-height: 100%;
     margin: 0 auto;
     width: 100vmin;
-    background-color: #ddddea;
+    background-color: rgba(255,255,255,0.4);
 }
 
 #title {

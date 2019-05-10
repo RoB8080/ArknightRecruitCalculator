@@ -1,7 +1,7 @@
 $(document).ready(function(){
     initTags();
     initAgents();
-    colorChange = setInterval(function() {s6Animation()},50);
+    colorChange = setInterval(function() {animation()},50);
 });
 
 function tagClick(e) {
@@ -29,8 +29,9 @@ function starFirstMethod() {
 
 
 let colorChange,s6=$(".agent.s6"),colorH = 0;
-function s6Animation(){
+function animation(){
     s6.css("background-color","hsl("+(colorH=(colorH+2)%360)+",80%,90%)");
+    $("body").css("background","linear-gradient(90deg, hsl("+(colorH+100)+",75%,90%), hsl("+colorH+",75%,90%))")
 }
 
 //tag
